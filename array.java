@@ -1,11 +1,12 @@
-public class array {
+import java.util.Scanner;
+// public class array {
     
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        int[] marks = { 10, 20, 30, 40, 50 };
-        int[][] finalMarks = {{10, 20, 30, 40, 50}, {60, 70, 80, 90, 100}};
+//         int[] marks = { 10, 20, 30, 40, 50 };
+//         int[][] finalMarks = {{10, 20, 30, 40, 50}, {60, 70, 80, 90, 100}};
         
-        System.out.println(finalMarks[1][3]);
+//         System.out.println(finalMarks[1][3]);
 
 
         // System.out.println("Hello, World!");
@@ -33,5 +34,20 @@ public class array {
         // for (int i = 0; i < names.length; i++) {
         //     System.out.println(names[i]);
         // }
+    //}
+    class array{
+        public static void main(String args[]) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the number of students: ");
+            int n = sc.nextInt();
+            int[] arry = new int[n];
+            for(int i = 0; i < n; i++) {
+                arry[i] = sc.nextInt();
+            }
+            for (int j= 0; j < n; j++) {
+                System.out.println(arry[j]);
+            }
+        }
     }
-}
+
+
