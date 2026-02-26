@@ -1,17 +1,21 @@
+import java.util.Collections;
 import java.util.HashMap;
 
 public class HashMapDemo {
     public static void main(String[] args) {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(1, 10);
-        map.put(2, 23);
-        map.put(3, 28);
+        HashMap<Integer, String> map = new HashMap<>();
+        String str = "hello";
+        map.put(1, "l");
+        map.put(2, "h");
+        map.put(3, "e");
+        map.put(4, "l");
         System.out.println(map);
         System.out.println(map.get(2));
-        map.remove(1);
+        // map.remove(1);
         System.out.println(map);
         System.out.println(map.containsKey(3));
-        System.out.println(map.containsValue(20));
+        System.out.println(map.containsValue("java"));
+        System.out.println(Collections.frequency(map.values(), "l"));
 
         
     
