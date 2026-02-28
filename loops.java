@@ -10,12 +10,13 @@ public class loops {
 
         // while loop
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int i = sc.nextInt();
-        while(i<100){
-            i++;
-            System.out.println(i);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter a number: ");
+            int i = sc.nextInt();
+            while(i<100){
+                i++;
+                System.out.println(i);
+            }
         }
 
     }

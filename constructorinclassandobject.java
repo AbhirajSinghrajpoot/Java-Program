@@ -1,4 +1,4 @@
-class Student{
+class ConstructorStudent{
     String name;
     int age;
     int rollno;
@@ -10,7 +10,7 @@ class Student{
         System.out.println("Age: " + this.age);
         System.out.println("Rollnumber: " + this.rollno);
     }
-    Student(String name, int age, int rollno){
+    ConstructorStudent(String name, int age, int rollno){
         this.name = name;
         this.age = age;
         this.rollno = rollno;
@@ -20,7 +20,7 @@ class Student{
 public class constructorinclassandobject {
     public static void main(String args[]){
 
-        Student s1 = new Student("Aman", 20, 1003);
+        ConstructorStudent s1 = new ConstructorStudent("Aman", 20, 1003);
         
         s1.studentInfo();
     }

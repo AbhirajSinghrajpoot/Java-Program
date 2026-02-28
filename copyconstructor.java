@@ -1,4 +1,4 @@
-class Student {
+class CopyStudent {
     String name;
     int age;
 
@@ -10,21 +10,21 @@ class Student {
 
     // copy constructor
 
-    Student(Student s1) {
+    CopyStudent(CopyStudent s1) {
         this.name = s1.name;
         this.age = s1.age;
     }
-    Student(){
+    CopyStudent(){
     }
 }
 
 public class copyconstructor {
     public static void main(String args[]) {
-        Student s1 = new Student();
+        CopyStudent s1 = new CopyStudent();
         s1.name = "aman";
         s1.age = 20;
 
-        Student s2 = new Student(s1); // copy constructor
+        CopyStudent s2 = new CopyStudent(s1); // copy constructor
         s2.studentInfo(); // prints the information of s1
          }
 }

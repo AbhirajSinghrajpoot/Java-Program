@@ -1,4 +1,4 @@
-class Shape{
+class SingleShape{
     int l = 10;
     int b = 20;
     public void area(){
@@ -6,8 +6,9 @@ class Shape{
     }
 }
 
-class Triangle extends Shape{
+class SingleTriangle extends SingleShape{
 
+    @Override
     public void area(){
         System.out.println("Area of triangle is: " + (0.5 * l * b));
     }
@@ -16,7 +17,7 @@ class Triangle extends Shape{
 public class sheritance {
     
     public static void main(String[] args) {
-        Triangle triangle = new Triangle();
+        SingleTriangle triangle = new SingleTriangle();
         triangle.area();
     }
 }

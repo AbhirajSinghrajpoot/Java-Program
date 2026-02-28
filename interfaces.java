@@ -1,7 +1,8 @@
-interface Animal {
+interface BasicAnimal {
     void walk();
 }
-class Dog implements Animal {
+class BasicDog implements BasicAnimal {
+    @Override
     public void walk()
     {
         System.out.println("Dog is walking");
@@ -11,7 +12,7 @@ class Dog implements Animal {
 
 public class interfaces {
     public static void main(String[] args) {
-        Dog dog = new Dog();
+        BasicDog dog = new BasicDog();
         dog.walk();
     }
 }

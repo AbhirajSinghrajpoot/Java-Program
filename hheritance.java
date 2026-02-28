@@ -1,4 +1,4 @@
-class Shape{
+class HybridShape{
     int l = 10;
     int b = 20;
     public void area(){
@@ -6,13 +6,15 @@ class Shape{
     }
 }
 
-class Triangle extends Shape{
+class HybridTriangle extends HybridShape{
 
+    @Override
     public void area(){
         System.out.println("Area of triangle is: " + (0.5 * l * b));
     }
 }
-class circle extends Shape{
+class HybridCircle extends HybridShape{
+    @Override
     public void area(){
         System.out.println("Area of circle is: " + (3.14 * l * b));
     }
@@ -21,9 +23,9 @@ class circle extends Shape{
 public class hheritance {
     
     public static void main(String[] args) {
-        Triangle triangle = new Triangle();
+        HybridTriangle triangle = new HybridTriangle();
         triangle.area();
-        circle c = new circle();
+        HybridCircle c = new HybridCircle();
         c.area();
     }
 }

@@ -18,7 +18,7 @@
 //     }
 // }
 
-class Student{
+class BasicStudent{
     String name;
     int age;
     int rollnumber;
@@ -55,7 +55,7 @@ public class classandobject {
         // System.out.println("Pen type is: "+ p1.type +".");
         
 
-        Student s1 = new Student();
+        BasicStudent s1 = new BasicStudent();
         s1.name = "John.";
         s1.age = 19;
         s1.rollnumber = 1003;

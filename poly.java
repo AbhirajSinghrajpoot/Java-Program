@@ -1,4 +1,4 @@
-class Student{
+class PolyStudent{
     String name;
     int age;
 
@@ -19,7 +19,7 @@ class Student{
 
 public class poly {
     public static void main(String args[]){
-        Student s1 = new Student();
+        PolyStudent s1 = new PolyStudent();
         s1.name = "aman";
         s1.age = 20;
         

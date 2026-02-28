@@ -1,4 +1,4 @@
-class Shape{
+class MultiShape{
     int l = 10;
     int b = 20;
     public void area(){
@@ -6,14 +6,16 @@ class Shape{
     }
 }
 
-class Triangle extends Shape{
+class MultiTriangle extends MultiShape{
 
+    @Override
     public void area(){
         System.out.println("Area of triangle is: " + (0.5 * l * b));
     }
 }
 
-class EquilateralTriangle extends Triangle{
+class MultiEquilateralTriangle extends MultiTriangle{
+    @Override
     public void area(){
         System.out.println("Area of equilateral triangle is: " + (0.5 * l * b));
     }
@@ -22,9 +24,9 @@ class EquilateralTriangle extends Triangle{
 public class mheritance {
     
     public static void main(String[] args) {
-        Triangle triangle = new Triangle();
+        MultiTriangle triangle = new MultiTriangle();
         triangle.area();
-        EquilateralTriangle equilateralTriangle = new EquilateralTriangle();
+        MultiEquilateralTriangle equilateralTriangle = new MultiEquilateralTriangle();
         equilateralTriangle.area();
     }
 }

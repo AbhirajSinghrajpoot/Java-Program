@@ -4,9 +4,10 @@ public class input {
         // input
         // Scanner class
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your name: ");
-        String name = sc.nextLine();
-        System.out.println(name);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter your name: ");
+            String name = sc.nextLine();
+            System.out.println(name);
+        }
         }
 }

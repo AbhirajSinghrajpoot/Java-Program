@@ -1,8 +1,8 @@
-class Shape {
+class InheritanceShape {
     String color;
 }
 
-class Triangle extends Shape {
+class InheritanceTriangle extends InheritanceShape {
     public void draw() {
         System.out.println("Drawing a triangle with color: " + color);
     }
@@ -11,7 +11,7 @@ class Triangle extends Shape {
 public class inheritance {
 
     public static void main(String[] ars){
-        Triangle t = new Triangle();
+        InheritanceTriangle t = new InheritanceTriangle();
         t.color = "Red";
         t.draw();
     }
