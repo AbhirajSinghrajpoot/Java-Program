@@ -4,14 +4,14 @@ import java.util.HashMap;
 public class HashMapDemo {
 
     public static void main(String[] args) {
-        // String str = "hello";
-        // HashMap<Integer, String> map = new HashMap<>();
-        // map.put(1, "l");
-        // map.put(2, "h");
-        // map.put(3, "e");
-        // map.put(4, "l");
-        // System.out.println(map);
-        // System.out.println(map.get(2));
+        String str = "hello";
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "l");
+        map.put(2, "h");
+        map.put(3, "e");
+        map.put(4, "l");
+        System.out.println(map);
+        System.out.println(map.get(2));
         // // map.remove(1);
         // System.out.println(map);
         // System.out.println(map.containsKey(3));
