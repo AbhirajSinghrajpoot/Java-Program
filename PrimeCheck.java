@@ -17,7 +17,6 @@ public class PrimeCheck {
                     isPrime = false;
                     break;
                 }
-                
             }
 
             if (isPrime) {
