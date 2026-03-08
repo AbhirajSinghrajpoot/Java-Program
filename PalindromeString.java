@@ -18,5 +18,6 @@ public class PalindromeString {
 
         scanner.close();
         
+        
     }
 }
