@@ -7,6 +7,7 @@ public class AreaOfCircle {
             double radius = scanner.nextDouble();
 
             double area = Math.PI * radius * radius;
+            
             double circumference = 2 * Math.PI * radius;
 
             System.out.println("Area of circle: " + area);
