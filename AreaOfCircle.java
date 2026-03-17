@@ -12,6 +12,7 @@ public class AreaOfCircle {
 
             System.out.println("Area of circle: " + area);
             System.out.println("Circumference of circle: " + circumference);
+        
         }
     }
 }
