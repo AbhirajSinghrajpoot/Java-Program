@@ -19,7 +19,9 @@ public class CountDigitsInNumber {
             }
         }
 
+        String type = originalNumber < 0 ? "negative" : "non-negative";
         System.out.println("Number of digits in " + originalNumber + " is: " + count);
+        System.out.println("Input type: " + type);
         scanner.close();
     }
 }
